@@ -1,0 +1,8 @@
+input {
+    /* border: none; */
+    /* border-bottom: 1px solid black; */
+    border: 2px dashed blue;
+    /* outline: none; */
+    outline: 2px dotted red;
+    outline-offset: 1px;
+}

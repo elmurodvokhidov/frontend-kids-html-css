@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    margin: 25px 0 0 20px;
+    background-color: red;
+    animation: oddiy_animatsiya 5s infinite running cubic-bezier(0.89,-0.09, 0.33,-0.44);
+    /* animation-name: oddiy_animatsiya; */
+    /* animation-duration: 5s; */
+    /* animation-delay: 3s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    /* animation-timing-function: cubic-bezier(0.89,-0.09, 0.33,-0.44); */
+    /* animation-fill-mode: both; */
+    /* animation-play-state: running; */
+}
+
+/* .box:hover {
+    animation-play-state: paused;
+} */
+
+@keyframes oddiy_animatsiya {
+    0% {
+        width: 200px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        background-color: black;
+    }
+
+    25% {
+        width: 200px;
+        height: 200px;
+        top: 0;
+        left: 1300px;
+        background-color: yellowgreen;
+    }
+
+    50% {
+        width: 200px;
+        height: 200px;
+        top: 500px;
+        left: 1300px;
+        /* border-radius: 50%; */
+        transform: rotate(360deg);
+        background-color: aqua;
+    }
+
+    75% {
+        width: 200px;
+        height: 200px;
+        top: 500px;
+        left: 0;
+        background-color: aqua;
+    }
+
+    100% {
+        width: 200px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        background-color: blue;
+    }
+}
